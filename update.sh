@@ -13,7 +13,7 @@ make
 sudo systemctl stop klipper
 make flash
 
-echo ** Spider Update
+echo ** Spider USB Update
 # spider
 cp $dir/spider_usb.config .config
 make clean
