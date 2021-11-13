@@ -1,6 +1,5 @@
 #!/bin/bash
 
-
 dir=$( cd ${0%/*} && pwd -P )
 echo $dir
 
