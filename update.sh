@@ -1,6 +1,8 @@
 #!/bin/bash
 
-dir=$(pwd)
+dir=$( cd ${0%/*} && pwd -P )
+echo $dir
+
 cd ~/klipper
 cp $dir/linux.config .config
 
