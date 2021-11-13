@@ -6,12 +6,14 @@ echo $dir
 cd ~/klipper
 cp $dir/linux.config .config
 
+echo ** Raspberry PI Update
 # raspberry pi
 make clean
 make
 sudo systemctl stop klipper
 make flash
 
+echo ** Spider Update
 # spider
 cp $dir/spider_uart.config .config
 make clean
