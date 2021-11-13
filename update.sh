@@ -16,6 +16,6 @@ make flash
 cp $dir/spider_uart.config .config
 make clean
 make
-/home/pi/klipper/scripts/flash-sdcard.sh -b 250000 /dev/ttyAMA0 fysetc-spider-v1
+./scripts/flash-sdcard.sh -b 250000 /dev/ttyAMA0 fysetc-spider-v1
 
 sudo systemctl start klipper
