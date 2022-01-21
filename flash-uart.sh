@@ -15,7 +15,7 @@ make flash
 
 echo ** Spider USB Update
 # spider
-cp $dir/spider_usb.config .config
+cp $dir/spider_uart.config .config
 make clean
 make
 ./scripts/flash-sdcard.sh -b 250000 /dev/ttyAMA0 fysetc-spider-v1
